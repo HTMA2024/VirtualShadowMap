@@ -1,5 +1,4 @@
 using System;
-using UnityEngine.Serialization;
 
 namespace AdaptiveRendering
 {
@@ -12,19 +11,16 @@ namespace AdaptiveRendering
         /// <summary>
         /// ҳ��X����
         /// </summary>
-        [FormerlySerializedAs("columnIndex")]
         public int gridColumn;
 
         /// <summary>
         /// ҳ��Y����
         /// </summary>
-        [FormerlySerializedAs("rowIndex")]
         public int gridRow;
 
         /// <summary>
         /// mipmap�ȼ�
         /// </summary>
-        [FormerlySerializedAs("detailLevel")]
         public int lodTier;
 
         /// <summary>

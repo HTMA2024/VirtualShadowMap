@@ -1,21 +1,15 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Camera))]
 public class OrbitViewController : MonoBehaviour
 {
     [Header("Movement")]
-    [FormerlySerializedAs("translationRate")]
     public float moveSpeed = 10f;
-    [FormerlySerializedAs("sprintFactor")]
     public float boostMultiplier = 3f;
-    [FormerlySerializedAs("crawlFactor")]
     public float slowMultiplier = 0.25f;
 
     [Header("Look")]
-    [FormerlySerializedAs("rotationGain")]
     public float lookSensitivity = 2f;
-    [FormerlySerializedAs("dampingFactor")]
     public float smoothFactor = 5f;
 
     private float m_YawAngle;
