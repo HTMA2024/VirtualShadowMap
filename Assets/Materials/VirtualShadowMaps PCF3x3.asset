@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: VirtualShadowMaps PCF3x3
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor v1.9.3.2\n// Available at the
+    Unity Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=19302\nNode;AmplifyShaderEditor.FunctionInput;9;-506.6673,-77.50003;Inherit;False;PositionWS;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;10;-504.6673,15.49997;Inherit;False;NormalWS;3;1;False;1;0;FLOAT3;0,1,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;6;-277.6667,-79.50003;Float;False;#ifdef
+    _VIRTUAL_SHADOW_MAPS$float3 shadowCoord = GetVirtualShadowTexcoord(PositionWS,
+    NormalWS)@$float virtualShadow = SampleVirtualShadowMap_PCF3x3(float4(shadowCoord,
+    0), 0)@$return virtualShadow@$#else$return 1@$#endif;1;Create;2;True;PositionWS;FLOAT3;0,0,0;In;;Float;False;True;NormalWS;FLOAT3;0,0,0;In;;Half;False;SampleVirtualShadowMap;False;False;0;;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-2,-70;Inherit;False;True;-1;VirtualShadowMaps
+    (PCF3x3);0;True;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;6;0;9;0\nWireConnection;6;1;10;0\nWireConnection;0;0;6;0\nASEEND*/\n//CHKSM=9F6136977387A9CC693E8FB822A3BE30CE1AEDE2"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 1
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives:
+    - {fileID: 0}
+    - {fileID: 0}
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems:
+    - LineType: 0
+      LineValue: 
+      GUIDToggle: 1
+      GUIDValue: 200b24f57b60b9e4baacc79bd8c7606f
+      ShowConditionals: 0
+      VersionMin: 0
+      VersionMax: 0
+      Passes: 
+      Origin: 2
+    - LineType: 2
+      LineValue: multi_compile ___ _VIRTUAL_SHADOW_MAPS
+      GUIDToggle: 0
+      GUIDValue: 
+      ShowConditionals: 0
+      VersionMin: 0
+      VersionMax: 0
+      Passes: 
+      Origin: 2
+  m_nodeCategory: 3
+  m_headerStyle: 0
+  m_headerColor: {r: 1, g: 0.4, b: 0, a: 1}
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0
+  m_url: 

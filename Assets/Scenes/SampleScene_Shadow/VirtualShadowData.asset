@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38080bf9afc74d429b5c47f58552b94, type: 3}
+  m_Name: VirtualShadowData
+  m_EditorClassIdentifier: 
+  regionCenter: {x: 0, y: 0.5, z: 0}
+  regionSize: 1
+  pageSize: 1
+  maxMipLevel: 1
+  maxResolution: 1024
+  bounds:
+    m_Center: {x: 0, y: 0.5, z: 0}
+    m_Extent: {x: 0.5, y: 0.5, z: 0.5}
+  direction: {x: 0, y: 0, z: 0}
+  worldToLocalMatrix:
+    e00: 0.86602545
+    e01: 0
+    e02: 0.49999994
+    e03: -0
+    e10: -0.38302216
+    e11: 0.6427877
+    e12: 0.66341394
+    e13: -1.9283631
+    e20: -0.3213938
+    e21: -0.76604444
+    e22: 0.5566704
+    e23: 2.2981334
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  localToWorldMatrix:
+    e00: 0.86602545
+    e01: -0.38302216
+    e02: -0.3213938
+    e03: 0
+    e10: 0
+    e11: 0.6427877
+    e12: -0.76604444
+    e13: 3
+    e20: 0.49999994
+    e21: 0.66341394
+    e22: 0.5566704
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  lightProjections:
+    list:
+    - Key:
+        pageX: 0
+        pageY: 0
+        mipLevel: 0
+      Value:
+        e00: 0.07408751
+        e01: 0
+        e02: 0.042774435
+        e03: 0.5
+        e10: -0.032767117
+        e11: 0.054989766
+        e12: 0.056754317
+        e13: 0.47250515
+        e20: -8.1299234e-10
+        e21: 0.21868014
+        e22: 0.000000006036087
+        e23: 0.7703858
+        e30: 0
+        e31: 0
+        e32: 0
+        e33: 1
+  texAssets:
+    list:
+    - Key:
+        pageX: 0
+        pageY: 0
+        mipLevel: 0
+      Value: 32f3059764d630b419d7996b97327a7d

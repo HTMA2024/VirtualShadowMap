@@ -1,0 +1,8 @@
+{
+    "name": "ExtractedCascadedOcclusion.Editor",
+    "references": [
+        "ExtractedCascadedOcclusion"
+    ],
+    "includePlatforms": ["Editor"],
+    "excludePlatforms": []
+}

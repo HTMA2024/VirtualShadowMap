@@ -1,0 +1,19 @@
+#pragma kernel ComputeDepthRange
+
+int viewportWidth;
+int viewportHeight;
+
+Texture2D<half2> sourceDepthMap;
+RWStructuredBuffer<int> depthRangeBuffer;
+
+[numthreads(8,8,1)]
+void ComputeDepthRange(int3 id : SV_DispatchThreadID)
+{
+	if (id.x < viewportWidth && id.y < viewportHeight)
+	{
+		int value = ceil(sourceDepthMap[id.xy].x);
+
+		InterlockedMin(depthRangeBuffer[0], value);
+		InterlockedMax(depthRangeBuffer[1], value);
+	}
+}
