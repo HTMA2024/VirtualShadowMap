@@ -89,3 +89,6 @@ Thumbs.db
 
 # Kiro
 .kiro/
+
+# Large files exceeding GitHub limit
+Assets/Bistro/Bistro_v5_2/BistroExterior.fbx
