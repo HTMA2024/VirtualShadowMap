@@ -8,7 +8,7 @@ A virtual shadow map system for Unity Built-in Render Pipeline, using virtual te
 
 CSM | VSM
 
-![compare](assets/github-repo-images/VirtualShadowMap/compare.gif)
+![compare](Images/compare.gif)
 
 ## System Architecture
 
